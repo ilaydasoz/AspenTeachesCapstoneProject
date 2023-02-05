@@ -1,0 +1,93 @@
+﻿@model AspenTeachesCoreProject.Models.UserSignUpModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/skydash/vendors/feather/feather.css">
+    <link rel="stylesheet" href="~/skydash/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="~/skydash/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="~/skydash/css/vertical-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="~/skydash/images/favicon.png" />
+</head>
+<body>
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper full-page-wrapper">
+            <div class="content-wrapper d-flex align-items-center auth px-0">
+                <div class="row w-100 mx-0">
+                    <div class="col-lg-4 mx-auto">
+                        <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+                            <div class="brand-logo">
+                                <img src="~/skydash/images/logo.png" alt="logo">
+                            </div>
+                            <h4>New here?</h4>
+                            <h6 class="font-weight-light">Signing up is pretty easy. It only takes a few steps</h6>
+                            <form class="pt-3" method="post">
+                                <div class="form-group">
+                                    <label>Name</label>
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                    <input type="text" asp-for="Name" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Surname</label>
+                                    <span asp-validation-for="Surname" class="text-danger"></span>
+                                    <input type="text" asp-for="Surname" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>E-mail</label>
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                    <input type="text" asp-for="Email" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Username</label>
+                                    <span asp-validation-for="Username" class="text-danger"></span>
+                                    <input type="text" asp-for="Username" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <span asp-validation-for="Password" class="text-danger"></span>
+                                    <input type="text" asp-for="Password" class="form-control" />
+                                </div>
+                                <div class="form-group">
+                                    <label>Confirm Password</label>
+                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                                    <input type="text" asp-for="ConfirmPassword" class="form-control" />
+                                </div>
+
+
+                                <div class="text-danger" asp-validation-summary="ModelOnly">
+
+                                </div>
+                                <button id="Button" type="submit" name="submit" formmethod="post" class="btn btn-block btn-inverse-primary btn-lg font-weight-medium auth-form-btn">Sign up</button>
+                                @* <div class="mt-3">
+
+                                    <a class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" asp-action="Index">Sign up</a>
+                                </div>
+                                <div class="text-center mt-4 font-weight-light">
+            Already have an account? <a href="login.html" class="text-primary">Login</a>
+        </div>*@
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content-wrapper ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <script src="~/skydash/vendors/js/vendor.bundle.base.js"></script>
+</body>
+</html>

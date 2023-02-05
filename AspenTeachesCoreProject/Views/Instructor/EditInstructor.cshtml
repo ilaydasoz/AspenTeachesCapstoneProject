@@ -1,0 +1,52 @@
+﻿@model EntityLayer.Concrete.Instructor
+@{
+    ViewData["Title"] = "EditInstructor";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Edit Instructor</h3>
+</div>
+
+@using (Html.BeginForm("EditInstructor", "Instructor", FormMethod.Post))
+{
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Edit Instructor</h4>
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label>ID</label>
+                        @Html.TextBoxFor(x => x.InstructorID, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Name</label>
+                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Surname</label>
+                        @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Title</label>
+                        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>GitHub</label>
+                        @Html.TextBoxFor(x => x.GitHubUrl, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Linkedln</label>
+                        @Html.TextBoxFor(x => x.LinkedinUrl, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        @Html.TextAreaFor(x => x.Description, 6, 3, new { @class = "form-control" })
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Save</button>
+                    <button class="btn btn-dark">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}

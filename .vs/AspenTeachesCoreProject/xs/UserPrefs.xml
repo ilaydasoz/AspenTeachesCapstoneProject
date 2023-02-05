@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{E568BC74-1B00-4F9C-A7C8-6774557AB052}|Default">
+  <MonoDevelop.Ide.ItemProperties.AspenTeachesCoreProject PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AspenTeachesCoreProject/Controllers/ReportController.cs">
+    <Files>
+      <File FileName="AspenTeachesCoreProject/Controllers/ReportController.cs" Line="29" Column="1" />
+      <File FileName="EntityLayer/Concrete/Instructor.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AspenTeachesCoreProject" expanded="True">
+            <Node name="AspenTeachesCoreProject" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="ReportController.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="EntityLayer" expanded="True">
+              <Node name="Concrete" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

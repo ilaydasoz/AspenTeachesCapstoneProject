@@ -1,0 +1,59 @@
+﻿
+@using EntityLayer.Concrete
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+                <h3 class="text-white mb-0">Instructors</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-items-center table-dark table-flush">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="sort" data-sort="name">Name and Surname</th>
+                            <th scope="col" class="sort" data-sort="budget">Title</th>
+                            <th scope="col" class="sort" data-sort="status">Status</th>
+                            <th scope="col" class="sort" data-sort="status">Delete</th>
+                            <th scope="col" class="sort" data-sort="completion">Edit</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <th scope="row">
+                                <div class="media align-items-center">
+                                    <a href="#" class="avatar rounded-circle mr-3">
+                                        <img alt="Image placeholder" src=@item.Image>
+                                    </a>
+                                    <div class="media-body">
+                                        <span class="name mb-0 text-sm">@item.Name @item.Surname</span>
+                                    </div>
+                                </div>
+                            </th>
+                            <td class="budget">@item.Title</td>
+                            <td>
+                                <span class="badge badge-dot mr-4">
+                                    <i class="bg-warning"></i>
+                                    <span class="status">Avaliable</span>
+                                </span>
+                            </td>
+                            <td><a href="/Instructor/DeleteInstructor/@item.InstructorID" class="btn btn-danger">Delete</a></td>
+                            <td><a href="/Instructor/EditInstructor/@item.InstructorID" class="btn btn-info">Edit</a></td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/Instructor/AddInstructor/" class="btn btn-primary">New Instructor</a>
+                <br /> <br />
+            </div>
+        </div>
+    </div>
+</div>

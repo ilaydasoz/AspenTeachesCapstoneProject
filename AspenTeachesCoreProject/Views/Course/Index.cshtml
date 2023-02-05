@@ -1,0 +1,70 @@
+﻿@using EntityLayer.Concrete
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col">
+        <div class="card bg-default shadow">
+            <div class="card-header bg-transparent border-0">
+                <h3 class="text-white mb-0">Courses</h3>
+            </div>
+            <div class="table-responsive">
+                <table class="table align-items-center table-dark table-flush">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="sort" data-sort="name">Title</th>
+                            <th scope="col" class="sort" data-sort="budget">Price</th>
+                            <th scope="col" class="sort" data-sort="status">Status</th>
+                            <th scope="col" class="sort" data-sort="completion">Hour</th>
+                            <th scope="col" class="sort" data-sort="status">Delete</th>
+                            <th scope="col" class="sort" data-sort="completion">Edit</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <th scope="row">
+                                    <div class="media align-items-center">
+                                        <a href="#" class="avatar rounded-circle mr-3">
+                                            <img alt="Image placeholder" src=@item.Image>
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="name mb-0 text-sm">@item.Title</span>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td class="budget">@item.Price</td>
+                                <td>
+                                    <span class="badge badge-dot mr-4">
+                                        <i class="bg-warning"></i>
+                                        <span class="status">Avaliable</span>
+                                    </span>
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <span class="completion mr-2">@item.Hour</span>
+                                        <div>
+                                            <div class="progress">
+                                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="@item.Hour" aria-valuemin="0" aria-valuemax="100" style="width: @item.Hour"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td><a href="/Course/DeleteCourse/@item.CourseID" class="btn btn-danger">Delete</a></td>
+                                <td><a href="/Course/EditCourse/@item.CourseID" class="btn btn-info">Edit</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+                <a href="/Course/AddCourse/" class="btn btn-primary">New Course</a>
+                <br /> <br />
+            </div>
+        </div>
+    </div>
+</div>

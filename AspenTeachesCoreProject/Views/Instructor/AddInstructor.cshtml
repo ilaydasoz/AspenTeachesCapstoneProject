@@ -1,0 +1,42 @@
+﻿@model EntityLayer.Concrete.Instructor
+@{
+    ViewData["Title"] = "AddCourse";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("AddInstructor", "Instructor", FormMethod.Post))
+{
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">New Instructor</h4>
+                <form class="forms-sample">
+                    <br />
+                    @Html.Label("Name")
+                    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                    <br />
+                    @Html.Label("Surname")
+                    @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+                    <br />
+                    @Html.Label("Title")
+                    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                    <br />
+                    <label>Description</label>
+                    @Html.TextAreaFor(x => x.Description, 6, 3, new { @class = "form-control" })
+                    <br />
+                    <label>GitHub</label>
+                    @Html.TextBoxFor(x => x.GitHubUrl, new { @class = "form-control" })
+
+                    <br />
+                    <label>Linkedln</label>
+                    @Html.TextBoxFor(x => x.LinkedinUrl, new { @class = "form-control" })
+                    <br />
+                    <label>Image</label>
+                    @Html.TextBoxFor(x => x.Image, new { @class = "form-control" })
+                    <br />
+                    <button class="btn btn-info">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,40 @@
+﻿@model EntityLayer.Concrete.Course
+@{
+    ViewData["Title"] = "AddCourse";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("AddCourse", "Course", FormMethod.Post))
+{
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">New Course</h4>
+                <form class="forms-sample">
+                    <br />
+                    @Html.Label("Course Title")
+                    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Title)
+                    <br />
+                    <label>Description</label>
+                    @Html.TextAreaFor(x => x.Description, 6, 3, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Description)
+                    <br />
+                    <label>Price</label>
+                    @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Price)
+                    <br />
+                    <label>Hour</label>
+                    @Html.TextBoxFor(x => x.Hour, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Hour)
+                    <br />
+                    <label>Course Image</label>
+                    @Html.TextBoxFor(x => x.Image, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(x => x.Image)
+                    <br />
+                    <button class="btn btn-info">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}

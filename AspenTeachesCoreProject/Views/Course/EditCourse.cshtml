@@ -1,0 +1,48 @@
+﻿@model EntityLayer.Concrete.Course
+@{
+    ViewData["Title"] = "EditCourse";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Edit Course</h3>
+</div>
+
+@using (Html.BeginForm("EditCourse", "Course", FormMethod.Post))
+{
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Edit Course</h4>
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label>ID</label>
+                        @Html.TextBoxFor(x => x.CourseID, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Title</label>
+                        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Hour</label>
+                        @Html.TextBoxFor(x => x.Hour, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Price</label>
+                        @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Course Image</label>
+                        @Html.TextBoxFor(x => x.Image, new { @class = "form-control" })
+                    </div>
+                    <div class="form-group">
+                        <label>Description</label>
+                        @Html.TextAreaFor(x => x.Description, 6, 3, new { @class = "form-control" })
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Save</button>
+                    <button class="btn btn-danger">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+}

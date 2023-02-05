@@ -1,0 +1,15 @@
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/bin/Debug/net5.0/EntityLayer.deps.json
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/bin/Debug/net5.0/EntityLayer.runtimeconfig.json
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/bin/Debug/net5.0/EntityLayer.runtimeconfig.dev.json
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/bin/Debug/net5.0/EntityLayer.dll
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/bin/Debug/net5.0/ref/EntityLayer.dll
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/bin/Debug/net5.0/EntityLayer.pdb
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/obj/Debug/net5.0/EntityLayer.csproj.AssemblyReference.cache
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/obj/Debug/net5.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/obj/Debug/net5.0/EntityLayer.AssemblyInfoInputs.cache
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/obj/Debug/net5.0/EntityLayer.AssemblyInfo.cs
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/obj/Debug/net5.0/EntityLayer.csproj.CoreCompileInputs.cache
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/obj/Debug/net5.0/EntityLayer.dll
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/obj/Debug/net5.0/ref/EntityLayer.dll
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/obj/Debug/net5.0/EntityLayer.pdb
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/EntityLayer/obj/Debug/net5.0/EntityLayer.genruntimeconfig.cache

@@ -1,0 +1,39 @@
+﻿@using EntityLayer.Concrete
+@model List<Instructor>
+<div class="section px-3 px-lg-4 pt-5" id="instructor">
+    <div class="container-narrow">
+        <div class="text-center mb-5">
+            <h2 class="marker marker-center">Our Instructors</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                @foreach (var item in Model)
+                {
+                <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
+                    <div class="card-header px-3 py-2">
+                        <div class="d-flex justify-content-between">
+
+                            <div>
+
+                                <h3 class="h5 mb-1">@item.Name @item.Surname</h3>
+                                <div class="text-muted text-small"> @item.Title <small></small></div>
+                                <div class="social-nav" data-aos="fade-up" data-aos-delay="200">
+                                    <nav role="navigation">
+                                        <ul class="nav justify-content-left">
+                                            <a class="nav-link" href="@item.LinkedinUrl" title="LinkedIn"><i class="fab fa-linkedin"></i><span class="menu-title sr-only">LinkedIn</span></a>
+                                            <a class="nav-link" href="@item.GitHubUrl" title="GitHub"><i class="fab fa-github"></i><span class="menu-title sr-only">GitHub</span></a>
+                                </div>
+                            </div><img src="@item.Image" width="70" height="75" alt="image" />
+                        </div>
+                    </div>
+                    
+                                <div class="card-body px-3 py-2">
+                                    <p>@item.Description</p>
+                                </div>
+                    </div>
+                    }
+                </div>
+
+        </div>
+    </div>
+</div>

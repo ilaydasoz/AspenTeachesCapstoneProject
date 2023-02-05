@@ -1,0 +1,125 @@
+﻿@using EntityLayer.Concrete
+@model List<Assignment>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_InstructorLayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Give Assignment</h4>
+            <p class="card-description">
+                You can give assignments to your students via their Student ID.
+            </p>
+
+            @*<button type="button" id="btngetlistall" class="btn btn-primary">Click to See All Assignments</button>
+        <button type="button" id="btndelete" class="btn btn-danger">Complete</button>
+            <button type="button" id="btnadd" class="btn btn-success">Save</button> col-md-6*@
+
+            <div class="form-group">
+
+                <input type="text" class="form-control" id="inpname" placeholder="Student ID" />
+                <br />
+                <input type="text" class="form-control" id="inpname" placeholder="Title" />
+                <br />
+                <input type="text" class="form-control" id="inpname" placeholder="Description" />
+                <br />
+                <input type="text" class="form-control" id="inpdate" placeholder="Deadline" />
+                <br />
+                <button type="button" id="btnadd" class="btn btn-success">Submit</button>
+            </div>
+            <br />
+        </div>
+    </div>
+</div>
+
+@section scripts
+        {
+    <script>$("#btngetlistall").click(function () {
+                                $.ajax({
+                                    contentType: "application/json",
+                                    dataType: "json",
+                                    type: "Get",
+                                    url: "/Assignment/ListAssignment/",
+
+                                    success: function (funk) {
+                                        let values = jQuery.parseJSON(funk);
+                                        console.log(values);
+
+                                        let htmlst = "<table class=table table-bordered> <tr> <th> ID </th> <th> Title </th> <th> Deadline </th> </tr>";
+                                        $.each(values, (index, value) => {
+                                            htmlst += `<tr> <td>${value.AssignmentID}</td> <td>${value.Name}</td> <td>${value.Deadline}</td> </tr>`
+                                        });
+                                        htmlst += "</table>";
+                                        $("#listassignment").html(htmlst);
+                                    }
+                                });
+                            });
+
+                            $("#btnadd").click(function () {
+                                let values = {
+                                    Name: $("#inpname").val(),
+                                    Date: $("#inpdate").val()
+                                };
+
+                                $.ajax({
+                                    type: "Post",
+                                    url: "/InstructorAssignment/InstructorAddAssignment/",
+                                    data: values,
+                                    success: function (funk1) {
+                                        let result = jQuery.parseJSON(funk1);
+                                        alert("Successfully added!");
+                                    }
+                                });
+                            });
+
+                            $("#btnid").click(x => {
+                                let id = $("#inpid").val();
+
+                                $.ajax({
+                                    contentType: "application/json",
+                                    dataType: "json",
+                                    type: "Get",
+                                    url: "/Assignment/GetById/",
+                                    data: { ExperienceID: id },
+                                    success: function (funk2) {
+                                        let result = jQuery.parseJSON(funk2);
+                                        console.log(result);
+                                        let htmlstr = `<table class=table table-hover> <tr> <th>Deneyim ID</th> <td>${result.AssignmentID}</td></tr> <tr> <th> Deneyim Başlığı </th> <td> ${result.Name}</td> </tr> </table>`;
+                                        $("#listbyidassignment").html(htmlstr);
+                                    }
+                                });
+
+                            });
+
+                            $("#btndelete").click(x => {
+                                let id = $("#inpexpid").val();
+                                $.ajax({
+                                    url: "/Assignment/DeleteAssignment/" + id,
+                                    type: "post",
+                                    contentType: "application/json",
+                                    dataType: "json",
+                                    success: function (funk3) {
+                                        loadData();
+                                    }
+                                });
+                            });
+
+                            $("#btnupdate").click(function () {
+                                let values = {
+                                    ExperienceID: $("#inpeditexpid").val(),
+                                    Name: $("#inpeditexpname").val()
+                                };
+
+                                $.ajax({
+                                    type: "post",
+                                    url: "/InstructorAssignment/InstructorUpdateAssignment/",
+                                    data: values,
+                                    success: function (func4) {
+                                        alert("Successfully updated!");
+                                    }
+                                });
+                            });</script>
+}
+<script src="~/lib/jquery/dist/jquery.js"></script>

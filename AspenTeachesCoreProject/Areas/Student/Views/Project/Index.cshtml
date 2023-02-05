@@ -1,0 +1,59 @@
+﻿@using EntityLayer.Concrete
+@model List<Project>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">My Projects</h4>
+            <p class="card-description">
+                You can see all your projects below.
+            </p>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>
+                                Name
+                            </th>
+                            <th>
+                                Github Url
+                            </th>
+                            <th>
+                                Description
+                            </th>
+                            <th>
+                                Edit
+                            </th>
+                            <th>
+                                Delete
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td class="py-1">
+                                @item.Name
+                            </td>
+                            <td>
+                                @item.GitHubUrl
+                            </td>
+                            <td>
+                                @item.Description
+                            </td>
+                            <td><a href="/Project/EditProject/@item.ProjectID" class="btn btn-success">Edit</a></td>
+                            <td><a href="/Project/DeleteProject/@item.ProjectID" class="btn btn-danger">Delete</a></td>
+
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

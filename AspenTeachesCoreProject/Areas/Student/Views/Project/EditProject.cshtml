@@ -1,0 +1,49 @@
+﻿@model EntityLayer.Concrete.Project
+@{
+    ViewData["Title"] = "EditProject";
+    Layout = "~/Views/Shared/_StudentLayout.cshtml";
+}
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Edit Project</h4>
+            <p class="card-description">
+                You can edit your project here.
+            </p>
+            <form class="form-group" method="post">
+                <label>ID</label>
+                @Html.TextBoxFor(x => x.ProjectID, new { @class = "form-control" })
+                <br />
+                @Html.Label("Project's Name")
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                <br />
+                @Html.Label("Description")
+                @Html.TextAreaFor(x => x.Description, 10, 3, new { @class = "form-control" })
+                <br />
+                @Html.Label("Github Url")
+                @Html.TextBoxFor(x => x.GitHubUrl, new { @class = "form-control" })
+                <br />
+                @Html.Label("Is your repository private?")
+                <div class="col-sm-4">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked>
+                            Yes
+                        </label>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2">
+                            No
+                        </label>
+                    </div>
+                </div>
+
+                <br />
+                <button class="btn btn-outline-primary">Save</button>
+            </form>
+        </div>
+    </div>
+</div>
