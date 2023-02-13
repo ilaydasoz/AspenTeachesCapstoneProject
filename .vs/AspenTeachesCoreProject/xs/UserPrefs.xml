@@ -1,22 +1,19 @@
 ﻿<Properties StartupConfiguration="{E568BC74-1B00-4F9C-A7C8-6774557AB052}|Default">
   <MonoDevelop.Ide.ItemProperties.AspenTeachesCoreProject PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AspenTeachesCoreProject/Controllers/ReportController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="DataAccessLayer/CQRS/Queries/GetCourseByIDQuery.cs">
     <Files>
-      <File FileName="AspenTeachesCoreProject/Controllers/ReportController.cs" Line="29" Column="1" />
-      <File FileName="EntityLayer/Concrete/Instructor.cs" Line="1" Column="1" />
+      <File FileName="DataAccessLayer/CQRS/Commands/CreateCourseCommand.cs" Line="9" Column="42" />
+      <File FileName="DataAccessLayer/CQRS/Handlers/CreateCourseCommandHandler.cs" />
+      <File FileName="DataAccessLayer/CQRS/Results/GetAllCoursesQueryResult.cs" />
+      <File FileName="DataAccessLayer/CQRS/Queries/GetCourseByIDQuery.cs" Line="14" Column="1" />
+      <File FileName="DataAccessLayer/CQRS/Handlers/GetCourseByIDQueryHandler.cs" />
+      <File FileName="DataAccessLayer/CQRS/Results/GetCourseByIDQueryResult.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AspenTeachesCoreProject" expanded="True">
-            <Node name="AspenTeachesCoreProject" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="ReportController.cs" selected="True" />
-              </Node>
-            </Node>
-            <Node name="EntityLayer" expanded="True">
-              <Node name="Concrete" expanded="True" />
-            </Node>
+            <Node name="EntityLayer" expanded="True" />
           </Node>
         </State>
       </Pad>

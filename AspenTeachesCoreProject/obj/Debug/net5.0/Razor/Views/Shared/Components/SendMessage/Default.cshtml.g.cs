@@ -33,8 +33,15 @@ using AspenTeachesCoreProject.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/Views/_ViewImports.cshtml"
+using DTOLayer.DTOs.InstructorDTOs;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"454b4cbf127939dbb3dc6654e8c2c0ddf69ae82c", @"/Views/Shared/Components/SendMessage/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c697ad26d61dcf889c7cc69d803dd488c0965c01", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"198572a375cf9f75ef15a7beeb05b3d94c148e36", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_SendMessage_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -64,7 +71,7 @@ using AspenTeachesCoreProject.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<div class=\"col-md-6\" data-aos=\"zoom-in\" data-aos-delay=\"100\">\n    <div class=\"bg-light my-2 p-3 pt-2\">\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "454b4cbf127939dbb3dc6654e8c2c0ddf69ae82c4012", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "454b4cbf127939dbb3dc6654e8c2c0ddf69ae82c4228", async() => {
                 WriteLiteral(@"
             <div class=""form-group my-2"">
                 <label for=""name"" class=""form-label fw-bolder"">Name</label>

@@ -72,6 +72,11 @@
     <None Remove="Areas\Instructor\Views\InstructorAssignment\" />
     <None Remove="EPPlus.Core" />
     <None Remove="iTextSharp.LGPLv2.Core" />
+    <None Remove="Views\Report\" />
+    <None Remove="ClosedXML" />
+    <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Mapping\" />
+    <None Remove="Mapping\AutoMapperProfile\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
@@ -93,6 +98,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="EPPlus.Core" Version="1.5.4" />
     <PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.3.2" />
+    <PackageReference Include="ClosedXML" Version="0.100.3" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
@@ -102,6 +109,12 @@
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\DTOLayer\DTOLayer.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\DTOLayer\DTOLayer.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
@@ -7589,6 +7602,9 @@
     <Folder Include="Areas\Instructor\Views\InstructorDashboard\" />
     <Folder Include="Areas\Instructor\Views\Default\" />
     <Folder Include="Areas\Instructor\Views\InstructorAssignment\" />
+    <Folder Include="Views\Report\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Mapping\AutoMapperProfile\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\Template\images\courses\" />

@@ -27,6 +27,13 @@ using AspenTeachesCoreProject.Models;
 #line hidden
 #nullable disable
 #nullable restore
+#line 4 "/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/Views/_ViewImports.cshtml"
+using DTOLayer.DTOs.InstructorDTOs;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/Views/Shared/Components/ServiceList/Default.cshtml"
 using EntityLayer.Concrete;
 
@@ -34,7 +41,7 @@ using EntityLayer.Concrete;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fd0d459d5be512ba97abeaaee207e3213a5ef1c1", @"/Views/Shared/Components/ServiceList/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c697ad26d61dcf889c7cc69d803dd488c0965c01", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"198572a375cf9f75ef15a7beeb05b3d94c148e36", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_ServiceList_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Service>>
     {
         #pragma warning disable 1998

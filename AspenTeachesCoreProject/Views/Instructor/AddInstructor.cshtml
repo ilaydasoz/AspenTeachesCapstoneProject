@@ -1,6 +1,6 @@
-﻿@model EntityLayer.Concrete.Instructor
+﻿@model InstructorAddDTO
 @{
-    ViewData["Title"] = "AddCourse";
+    ViewData["Title"] = "AddInstructor";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
@@ -12,27 +12,33 @@
                 <h4 class="card-title">New Instructor</h4>
                 <form class="forms-sample">
                     <br />
-                    @Html.Label("Name")
-                    @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+                    <label>Name</label>
+                    <input type="text" class="form-control" asp-for="Name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
                     <br />
-                    @Html.Label("Surname")
-                    @Html.TextBoxFor(x => x.Surname, new { @class = "form-control" })
+                    <label>Surname</label>
+                    <input type="text" class="form-control" asp-for="Surname" />
+                    <span asp-validation-for="Surname" class="text-danger"></span>
                     <br />
-                    @Html.Label("Title")
-                    @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+                    <label>Title</label>
+                    <input type="text" class="form-control" asp-for="Title" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
                     <br />
                     <label>Description</label>
-                    @Html.TextAreaFor(x => x.Description, 6, 3, new { @class = "form-control" })
+                    <input type="text" class="form-control" asp-for="Description" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
                     <br />
                     <label>GitHub</label>
-                    @Html.TextBoxFor(x => x.GitHubUrl, new { @class = "form-control" })
-
+                    <input type="text" class="form-control" asp-for="GithubUrl" />
+                    <span asp-validation-for="GithubUrl" class="text-danger"></span>
                     <br />
                     <label>Linkedln</label>
-                    @Html.TextBoxFor(x => x.LinkedinUrl, new { @class = "form-control" })
+                    <input type="text" class="form-control" asp-for="LinkedinUrl" />
+                    <span asp-validation-for="LinkedinUrl" class="text-danger"></span>
                     <br />
                     <label>Image</label>
-                    @Html.TextBoxFor(x => x.Image, new { @class = "form-control" })
+                    <input type="text" class="form-control" asp-for="Image" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
                     <br />
                     <button class="btn btn-info">Save</button>
                 </form>

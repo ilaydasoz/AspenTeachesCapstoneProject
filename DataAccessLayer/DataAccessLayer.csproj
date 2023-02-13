@@ -15,12 +15,22 @@
     <None Remove="Microsoft.EntityFrameworkCore.Design" />
     <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
     <None Remove="Microsoft.AspNetCore.Identity.EntityFrameworkCore" />
+    <None Remove="CQRS\" />
+    <None Remove="CQRS\Handlers\" />
+    <None Remove="CQRS\Queries\" />
+    <None Remove="CQRS\Results\" />
+    <None Remove="CQRS\Commands\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Abstract\" />
     <Folder Include="Concrete\" />
     <Folder Include="Repository\" />
     <Folder Include="EntityFramework\" />
+    <Folder Include="CQRS\" />
+    <Folder Include="CQRS\Handlers\" />
+    <Folder Include="CQRS\Queries\" />
+    <Folder Include="CQRS\Results\" />
+    <Folder Include="CQRS\Commands\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />

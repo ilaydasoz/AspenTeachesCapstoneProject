@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using DTOLayer.DTOs.InstructorDTOs;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,6 +15,8 @@ namespace AspenTeachesCoreProject.Controllers
     public class InstructorController : Controller
     {
         InstructorManager instructorManager = new InstructorManager(new EfInstructorDal());
+
+        private readonly IInstructorService _instructorService;
 
         public IActionResult Index()
         {
@@ -26,11 +30,32 @@ namespace AspenTeachesCoreProject.Controllers
             return View();
         }
 
-        [HttpPost]
+        /*[HttpPost]
         public IActionResult AddInstructor(Instructor p)
         {
             instructorManager.TAdd(p);
             return RedirectToAction("Index");
+        }*/
+
+        [HttpPost]
+        public IActionResult AddInstructor(InstructorAddDTO model)
+        {
+            if (ModelState.IsValid)
+            {
+                _instructorService.TAdd(new Instructor()
+                {
+                    Name = model.Name,
+                    Surname = model.Surname,
+                    Title = model.Title,
+                    Description = model.Description,
+                    GitHubUrl = model.GithubUrl,
+                    LinkedinUrl = model.LinkedinUrl,
+                    Image = model.Image
+                });
+
+                return RedirectToAction("Index");
+            }
+            return View();
         }
 
         public IActionResult DeleteInstructor(int id)

@@ -33,8 +33,15 @@ using AspenTeachesCoreProject.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/Views/_ViewImports.cshtml"
+using DTOLayer.DTOs.InstructorDTOs;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"78b8b8ce1881928da039cf8529b5cb593edd7e58", @"/Views/Shared/_InstructorLayout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c697ad26d61dcf889c7cc69d803dd488c0965c01", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"198572a375cf9f75ef15a7beeb05b3d94c148e36", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__InstructorLayout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #line hidden
@@ -70,7 +77,7 @@ Write(await Html.PartialAsync("/Areas/Student/Views/Default/HeadPartial.cshtml")
 #line hidden
 #nullable disable
             WriteLiteral("\n\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78b8b8ce1881928da039cf8529b5cb593edd7e583738", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "78b8b8ce1881928da039cf8529b5cb593edd7e583954", async() => {
                 WriteLiteral("\n    <div class=\"container-scroller\">\n        <!-- partial:../../partials/_navbar.html -->\n        ");
 #nullable restore
 #line 9 "/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/Views/Shared/_InstructorLayout.cshtml"

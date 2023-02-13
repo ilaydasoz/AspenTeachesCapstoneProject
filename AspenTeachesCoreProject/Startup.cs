@@ -37,8 +37,9 @@ namespace AspenTeachesCoreProject
 
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
-            
-            services.AddControllersWithViews();
+            services.AddAutoMapper(typeof(Startup));
+            services.CustomizedValidator();
+            services.AddControllersWithViews().AddFluentValidation();
 
             services.AddMvc(config =>
             {

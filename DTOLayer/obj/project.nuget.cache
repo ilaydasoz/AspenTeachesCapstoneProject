@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "RmEhrR4Emq0SsQ5PTQ7JlpJ8jF2szuoxQ+K+uFUfjWSvlabuBdsZ3hYthy0ljIZMOh/5FOzkZC94MR2rWgCMiQ==",
+  "success": true,
+  "projectFilePath": "/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/DTOLayer/DTOLayer.csproj",
+  "expectedPackageFiles": [
+    "/Users/ilaydasozyilmaz/.nuget/packages/automapper/12.0.0/automapper.12.0.0.nupkg.sha512",
+    "/Users/ilaydasozyilmaz/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.0/automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
+    "/Users/ilaydasozyilmaz/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/ilaydasozyilmaz/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/ilaydasozyilmaz/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/ilaydasozyilmaz/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/Users/ilaydasozyilmaz/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

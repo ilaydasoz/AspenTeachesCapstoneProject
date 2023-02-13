@@ -18,3 +18,12 @@
 /Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/obj/Debug/net5.0/ref/BusinessLayer.dll
 /Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/obj/Debug/net5.0/BusinessLayer.pdb
 /Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/obj/Debug/net5.0/BusinessLayer.genruntimeconfig.cache
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/bin/Debug/net5.0/DTOLayer.Views.dll
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/bin/Debug/net5.0/DTOLayer.Views.pdb
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/bin/Debug/net5.0/DTOLayer.deps.json
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/bin/Debug/net5.0/DTOLayer.runtimeconfig.json
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/bin/Debug/net5.0/DTOLayer.runtimeconfig.dev.json
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/bin/Debug/net5.0/appsettings.Development.json
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/bin/Debug/net5.0/appsettings.json
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/bin/Debug/net5.0/DTOLayer.dll
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/BusinessLayer/bin/Debug/net5.0/DTOLayer.pdb
