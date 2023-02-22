@@ -17,6 +17,7 @@ namespace AspenTeachesCoreProject.Controllers
     [AllowAnonymous]
     public class ReportController : Controller
     {
+        [HttpGet]
         public IActionResult ReportList()
         {
             return View();

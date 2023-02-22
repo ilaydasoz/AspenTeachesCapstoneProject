@@ -22,6 +22,7 @@ namespace AspenTeachesCoreProject.Areas.Student.Controllers
             _userManager = userManager;
         }
 
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var values = await _userManager.FindByNameAsync(User.Identity.Name);

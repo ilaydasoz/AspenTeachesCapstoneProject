@@ -16,7 +16,8 @@ namespace BusinessLayer.DIContainer
         {           
             services.AddScoped<IAppUserService, AppUserManager>();
             services.AddScoped<IAppUserDal, EfAppUserDal>();
-
+            services.AddScoped<IRoleService, RoleManager>();
+            services.AddScoped<IAppRoleDal, EfAppRoleDal>();
             services.AddScoped<IInstructorService, InstructorManager>();
             services.AddScoped<IInstructorDal, EfInstructorDal>();
 

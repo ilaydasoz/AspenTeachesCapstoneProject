@@ -14,6 +14,7 @@ namespace AspenTeachesCoreProject.Areas.Student.Controllers
     {
         ProjectManager projectManager = new ProjectManager(new EfProjectDal());
 
+        [HttpGet]
         public IActionResult Index()
         {
             var values = projectManager.TGetList();

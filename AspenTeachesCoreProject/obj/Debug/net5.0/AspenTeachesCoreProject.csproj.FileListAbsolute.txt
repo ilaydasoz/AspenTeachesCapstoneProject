@@ -155,3 +155,8 @@
 /Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/bin/Debug/net5.0/DTOLayer.dll
 /Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/bin/Debug/net5.0/DTOLayer.pdb
 /Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/obj/Debug/net5.0/staticwebassets/AspenTeachesCoreProject.StaticWebAssets.xml
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/bin/Debug/net5.0/libman.json
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/obj/Debug/net5.0/Razor/Areas/Student/Views/Chat/Index.cshtml.g.cs
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/obj/Debug/net5.0/Razor/Views/Error/401.cshtml.g.cs
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/obj/Debug/net5.0/Razor/Views/Error/404.cshtml.g.cs
+/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/bin/Debug/net5.0/System.Net.WebSockets.WebSocketProtocol.dll

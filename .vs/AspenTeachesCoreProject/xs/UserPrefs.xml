@@ -1,19 +1,31 @@
 ﻿<Properties StartupConfiguration="{E568BC74-1B00-4F9C-A7C8-6774557AB052}|Default">
   <MonoDevelop.Ide.ItemProperties.AspenTeachesCoreProject PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="DataAccessLayer/CQRS/Queries/GetCourseByIDQuery.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AspenTeachesCoreProject/Areas/Student/Views/Chat/Index.cshtml">
     <Files>
-      <File FileName="DataAccessLayer/CQRS/Commands/CreateCourseCommand.cs" Line="9" Column="42" />
-      <File FileName="DataAccessLayer/CQRS/Handlers/CreateCourseCommandHandler.cs" />
-      <File FileName="DataAccessLayer/CQRS/Results/GetAllCoursesQueryResult.cs" />
-      <File FileName="DataAccessLayer/CQRS/Queries/GetCourseByIDQuery.cs" Line="14" Column="1" />
-      <File FileName="DataAccessLayer/CQRS/Handlers/GetCourseByIDQueryHandler.cs" />
-      <File FileName="DataAccessLayer/CQRS/Results/GetCourseByIDQueryResult.cs" />
+      <File FileName="AspenTeachesCoreProject/Areas/Student/Views/Chat/Index.cshtml" Line="31" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AspenTeachesCoreProject" expanded="True">
-            <Node name="EntityLayer" expanded="True" />
+            <Node name="AspenTeachesCoreProject" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Student" expanded="True">
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Assignment" expanded="True" />
+                    <Node name="Chat" expanded="True">
+                      <Node name="Index.cshtml" selected="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Hubs" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>

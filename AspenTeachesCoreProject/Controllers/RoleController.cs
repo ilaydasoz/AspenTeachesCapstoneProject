@@ -18,6 +18,7 @@ namespace AspenTeachesCoreProject.Controllers
             _roleManager = roleManager;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             var values = _roleManager.Roles.ToList();

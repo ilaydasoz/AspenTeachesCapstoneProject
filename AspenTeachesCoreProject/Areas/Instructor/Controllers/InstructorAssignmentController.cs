@@ -20,6 +20,7 @@ namespace AspenTeachesCoreProject.Areas.Instructor.Controllers
     {
         AssignmentManager assignmentManager = new AssignmentManager(new EfAssignmentDal());
 
+        [HttpGet]
         public IActionResult Index()
         {
             return View();

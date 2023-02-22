@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/AspenTeachesCoreProject" Path="/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/AspenTeachesCoreProject/wwwroot/" />
+  <ContentRoot BasePath="_content/DTOLayer" Path="/Users/ilaydasozyilmaz/Projects/AspenTeachesCoreProject/DTOLayer/wwwroot/" />
+</StaticWebAssets>

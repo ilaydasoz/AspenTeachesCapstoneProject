@@ -14,6 +14,7 @@ namespace AspenTeachesCoreProject.Controllers
             _userManager = userManager;
         }
 
+        [HttpGet]
         public IActionResult Index()
         {
             var values = _userManager.Users.ToList();

@@ -1,19 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using BusinessLayer.Abstract;
-using BusinessLayer.Concrete;
+﻿using AspenTeachesCoreProject.Hubs;
 using BusinessLayer.DIContainer;
-using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
-using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -40,6 +32,7 @@ namespace AspenTeachesCoreProject
             services.AddAutoMapper(typeof(Startup));
             services.CustomizedValidator();
             services.AddControllersWithViews().AddFluentValidation();
+            services.AddSignalR();
 
             services.AddMvc(config =>
             {
@@ -71,6 +64,7 @@ namespace AspenTeachesCoreProject
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+            
 
             app.UseEndpoints(endpoints =>
             {
@@ -85,6 +79,8 @@ namespace AspenTeachesCoreProject
                   name: "areas",
                   pattern: "{area:exists}/{controller=Default}/{action=Index}/{id?}"
                 );
+
+                endpoints.MapHub<ChatHub>("/chatHub");
             });
 
         }
